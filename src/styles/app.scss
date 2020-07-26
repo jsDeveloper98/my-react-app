@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$bgColor: #222226;
+$inputColor: #444446;
+$textColor: #777;
+
+body {
+  .sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: $bgColor;
+
+    .sign-up-form {
+      display: flex;
+      justify-content: center;
+    }
+
+    .sign-up-form-group {
+      margin: 0 5px;
+    }
+
+    .sign-up-form-conditions {
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+
+      .form-check {
+        color: $textColor;
+      }
+    }
+
+    .sign-up-form-btn-wrapper {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+
+      .sign-up-form-btn {
+        background-color: $inputColor;
+        border: none;
+        outline: none;
+        box-shadow: none;
+
+        &:active {
+          background-color: $inputColor;
+        }
+      }
+    }
+
+    .form-control {
+      background-color: $inputColor;
+      border: none;
+      color: white;
+    }
+
+    .input-group-prepend {
+      margin-right: 0;
+    }
+
+    .input-group-text {
+      background-color: $inputColor;
+      color: $textColor;
+      border-color: $textColor;
+    }
+  }
+}
